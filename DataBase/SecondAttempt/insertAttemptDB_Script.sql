@@ -13,7 +13,7 @@ VALUES (1, 1, 2, 2, 1, '2022-04-01');
 INSERT INTO FootballMatch (footballMatch_id, home_team_id, away_team_id, home_team_score, away_team_score, match_date) 
 VALUES (2, 3, 4, 1, 0, '2022-05-15');
 INSERT INTO FootballMatch (footballMatch_id, home_team_id, away_team_id, home_team_score, away_team_score, match_date) 
-VALUES (3, 5, 6, 3, 3, '2022-06-20');
+VALUES (3, 5, 3, 3, 3, '2022-06-20');
 
 
 
