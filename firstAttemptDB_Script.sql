@@ -1,3 +1,6 @@
+Create database fantasy;
+USE fantasy;
+
 CREATE TABLE Real_Life_Team (
   real_life_team_id INT PRIMARY KEY,
   real_life_team_name VARCHAR(50)
@@ -66,4 +69,3 @@ CREATE TABLE Player_Match_Points (
   FOREIGN KEY (player_id) REFERENCES Player(player_id),
   FOREIGN KEY  (footballMatch_id ) REFERENCES FootballMatch (footballMatch_id )
 );
-
