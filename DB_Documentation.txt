@@ -1,0 +1,13 @@
+Users -> Stores the user information
+
+FootballTeam -> Stores the user team information (user creates his own team).
+
+Player -> Real-life players
+
+Real_life_team -> Stores the name of the team in real life.
+
+Player_match_points -> Stores the points a player made in a match
+
+Player_match_stats -> Stores the stats of a player in a match
+
+FootballMatch -> Stores the result of the match played and more.
