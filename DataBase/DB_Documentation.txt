@@ -11,3 +11,5 @@ Player_match_points -> Stores the points a player made in a match
 Player_match_stats -> Stores the stats of a player in a match
 
 FootballMatch -> Stores the result of the match played and more.
+
+Market -> stores the players that are selling on the market

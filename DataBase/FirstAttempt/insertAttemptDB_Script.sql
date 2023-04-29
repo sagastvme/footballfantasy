@@ -1,9 +1,9 @@
-INSERT INTO Real_Life_Team (real_life_team_id, real_life_team_name) VALUES (1, 'Manchester United');
-INSERT INTO Real_Life_Team (real_life_team_id, real_life_team_name) VALUES (2, 'Liverpool');
-INSERT INTO Real_Life_Team (real_life_team_id, real_life_team_name) VALUES (3, 'Barcelona');
-INSERT INTO Real_Life_Team (real_life_team_id, real_life_team_name) VALUES (4, 'Real Madrid');
-INSERT INTO Real_Life_Team (real_life_team_id, real_life_team_name) VALUES (5, 'Bayern Munich');
-INSERT INTO Real_Life_Team (real_life_team_id, real_life_team_name) VALUES (6, 'Paris Saint-Germain');
+INSERT INTO `real_life_team` (`real_life_team_id`, `real_life_team_name`, `alternative_name`, `primary_color`, `secondary_color`) VALUES
+(1, 'Manchester United', 'Man United', 'Red', 'White'),
+(2, 'Real Madrid', 'Los Blancos', 'White', 'Purple'),
+(3, 'FC Barcelona', 'Barca', 'Blue', 'Garnet'),
+(4, 'Bayern Munich', 'FC Bayern', 'Red', 'White'),
+(5, 'Liverpool FC', 'The Reds', 'Red', 'Yellow');
 
 
 
