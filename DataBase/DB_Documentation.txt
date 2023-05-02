@@ -1,15 +1,16 @@
 Users -> Stores the user information
 
-FootballTeam -> Stores the user team information (user creates his own team).
-
-Player -> Real-life players
+Team -> Stores the user team information (user creates his own team).
 
 Real_life_team -> Stores the name of the team in real life.
 
-Player_match_points -> Stores the points a player made in a match
+Player_stats -> Stores the stats of a player in a match
 
-Player_match_stats -> Stores the stats of a player in a match
-
-FootballMatch -> Stores the result of the match played and more.
+Player -> Real-life players
 
 Market -> stores the players that are selling on the market
+
+League -> every user plays in a league or multiple leagues.
+
+Game_week-> Its function is to organize everything by week.
+
