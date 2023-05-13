@@ -1,5 +1,5 @@
 <template>
-    <nav class="pb-2  text-xs flex flex-row gap-5 w-full  h-20 mt-auto  bg-opacity-40 bg-gray-900">
+    <nav class="pb-2  text-xs flex flex-row gap-5 w-full  h-20 mt-auto  ">
         <!--   <p class="flex flex-col justify-center items-center w-1/5">
              <span class="mt-2">
                  <svg fill="white" height="44px" width="44px" version="1.1" id="Capa_1"
@@ -12,45 +12,51 @@
                <span>Leagues</span>
 
            </p>-->
-        <p class="flex flex-col justify-center items-center w-1/4">
+        <router-link :to="{name: 'points'}" class="flex flex-col justify-center items-center w-1/4">
               <span>
-                  <svg width="50px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g
-                          id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier"
-                                                                         stroke-linecap="round"
-                                                                         stroke-linejoin="round"></g><g
-                          id="SVGRepo_iconCarrier"> <path
-                          d="M14.65 8.93274L12.4852 4.30901C12.2923 3.89699 11.7077 3.897 11.5148 4.30902L9.35002 8.93274L4.45559 9.68243C4.02435 9.74848 3.84827 10.2758 4.15292 10.5888L7.71225 14.2461L6.87774 19.3749C6.80571 19.8176 7.27445 20.1487 7.66601 19.9317L12 17.5299L16.334 19.9317C16.7256 20.1487 17.1943 19.8176 17.1223 19.3749L16.2878 14.2461L19.8471 10.5888C20.1517 10.2758 19.9756 9.74848 19.5444 9.68243L14.65 8.93274Z"
-                          stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+             <svg :class="{ 'fill-white': $route.name === 'points' }" width="50px" height="64px" viewBox="0 0 24 24"
+                  fill="none" xmlns="http://www.w3.org/2000/svg"><g
+                     id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"></g><g
+                     id="SVGRepo_iconCarrier"> <path
+                     d="M14.65 8.93274L12.4852 4.30901C12.2923 3.89699 11.7077 3.897 11.5148 4.30902L9.35002 8.93274L4.45559 9.68243C4.02435 9.74848 3.84827 10.2758 4.15292 10.5888L7.71225 14.2461L6.87774 19.3749C6.80571 19.8176 7.27445 20.1487 7.66601 19.9317L12 17.5299L16.334 19.9317C16.7256 20.1487 17.1943 19.8176 17.1223 19.3749L16.2878 14.2461L19.8471 10.5888C20.1517 10.2758 19.9756 9.74848 19.5444 9.68243L14.65 8.93274Z"
+                     stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
               </span>
             <span>Points</span>
 
-        </p>
-        <p class="flex flex-col justify-center items-center w-1/4">
+        </router-link>
+        <router-link :to="{name: 'squad'}" class="flex flex-col justify-center items-center w-1/4">
       <span>
-          <svg width="50px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g
-                  id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                                 stroke-linejoin="round"></g><g
-                  id="SVGRepo_iconCarrier"> <path
-                  d="M4 9.47256V6.26286C4 5.92383 4.21369 5.62162 4.53332 5.50861L7.73332 4.3772C8.25389 4.19314 8.80587 4.5903 8.9971 5.10828C9.44791 6.32939 10.6223 7.20005 12 7.20005C13.3777 7.20005 14.5521 6.3294 15.0029 5.10828C15.1941 4.5903 15.7461 4.19314 16.2667 4.3772L19.4667 5.50861C19.7863 5.62163 20 5.92383 20 6.26286V9.47256C20 9.99301 19.5109 10.3749 19.006 10.2487L17.794 9.94569C17.2891 9.81946 16.8 10.2013 16.8 10.7218V19.2972C16.8 19.739 16.4418 20.0972 16 20.0972H8C7.55817 20.0972 7.2 19.739 7.2 19.2972V10.7218C7.2 10.2013 6.71089 9.81946 6.20597 9.94569L4.99403 10.2487C4.48911 10.3749 4 9.99302 4 9.47256Z"
-                  stroke="#ffffff" stroke-width="0.8"></path> </g></svg>
+         <svg :class="{ 'fill-white': $route.name === 'squad' }" width="50px" height="64px" viewBox="0 0 24 24"
+              fill="none" xmlns="http://www.w3.org/2000/svg"><g
+                 id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                                stroke-linejoin="round"></g><g
+                 id="SVGRepo_iconCarrier"> <path
+                 d="M4 9.47256V6.26286C4 5.92383 4.21369 5.62162 4.53332 5.50861L7.73332 4.3772C8.25389 4.19314 8.80587 4.5903 8.9971 5.10828C9.44791 6.32939 10.6223 7.20005 12 7.20005C13.3777 7.20005 14.5521 6.3294 15.0029 5.10828C15.1941 4.5903 15.7461 4.19314 16.2667 4.3772L19.4667 5.50861C19.7863 5.62163 20 5.92383 20 6.26286V9.47256C20 9.99301 19.5109 10.3749 19.006 10.2487L17.794 9.94569C17.2891 9.81946 16.8 10.2013 16.8 10.7218V19.2972C16.8 19.739 16.4418 20.0972 16 20.0972H8C7.55817 20.0972 7.2 19.739 7.2 19.2972V10.7218C7.2 10.2013 6.71089 9.81946 6.20597 9.94569L4.99403 10.2487C4.48911 10.3749 4 9.99302 4 9.47256Z"
+                 stroke="#ffffff" stroke-width="0.8"></path> </g></svg>
       </span>
             <span>Squad</span>
 
-        </p>
-        <p class="flex flex-col justify-center items-center  w-1/4">
+        </router-link>
+        <router-link :to="{name:'market'}" class="  flex flex-col justify-center items-center  w-1/4">
 <span>
-<svg width="50px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g
-        id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                       stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path
-        d="M4 12V9C4 8.44771 4.44772 8 5 8H9M4 12V17C4 17.5523 4.44772 18 5 18H19C19.5523 18 20 17.5523 20 17V12M4 12L11 13H13L20 12M20 12V9C20 8.44771 19.5523 8 19 8H15M9 8V7C9 6.44772 9.44772 6 10 6H14C14.5523 6 15 6.44772 15 7V8M9 8H15M11 14.5H13"
-        stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+  <svg :class="{ 'fill-white': $route.name === 'market' }" width="50px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g
+          id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                         stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g
+          id="Interface / Suitcase"> <path id="Vector"
+                                           d="M8 8H6.2002C5.08009 8 4.51962 8 4.0918 8.21799C3.71547 8.40973 3.40973 8.71547 3.21799 9.0918C3 9.51962 3 10.0801 3 11.2002V16.8002C3 17.9203 3 18.4801 3.21799 18.9079C3.40973 19.2842 3.71547 19.5905 4.0918 19.7822C4.5192 20 5.07899 20 6.19691 20H17.8031C18.921 20 19.48 20 19.9074 19.7822C20.2837 19.5905 20.5905 19.2842 20.7822 18.9079C21 18.4805 21 17.9215 21 16.8036V11.1969C21 10.079 21 9.5192 20.7822 9.0918C20.5905 8.71547 20.2837 8.40973 19.9074 8.21799C19.4796 8 18.9203 8 17.8002 8H16M8 8H16M8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8"
+                                           stroke="white" stroke-width="1" stroke-linecap="round"
+                                           stroke-linejoin="round"></path> </g> </g></svg>
 </span>
             <span>Market</span>
 
-        </p>
-        <p class="flex flex-col justify-center items-center w-1/4">
+        </router-link>
+        <router-link :to="{name: 'profile'}" class="flex flex-col justify-center items-center w-1/4">
         <span>
-<svg width="50px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g
+<svg :class="{ 'fill-white': $route.name === 'profile' }"
+
+     width="50px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g
         id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round"
                                                        stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path
         d="M16 8C16 10.2091 14.2091 12 12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8Z"
@@ -60,7 +66,7 @@
         </span>
             <span>Profile</span>
 
-        </p>
+        </router-link>
     </nav>
 </template>
 
